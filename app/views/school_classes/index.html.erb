@@ -1,0 +1,7 @@
+
+
+<h1>Some content</h1>
+<% @schools.each do |clz|%>
+    <%= link_to "#{clz.title} #{clz.room_number}", school_class_path(clz)%><br>
+    <br>
+<%end%>
